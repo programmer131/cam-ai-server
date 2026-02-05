@@ -1,0 +1,12 @@
+[Unit]
+Description=YOLO Detection Server
+After=network.target
+
+[Service]
+User=cam
+WorkingDirectory=/home/cam/Downloads
+ExecStart=/usr/bin/python3 server.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

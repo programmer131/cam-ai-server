@@ -11,6 +11,10 @@ now you have you IP cam setup running with yolo26
 
 create a service or start it with cron automatically on every system boot
 
+copy service to /etc/systemd/system/
+
+then do
+
 # Reload systemd
 
 sudo systemctl daemon-reload
